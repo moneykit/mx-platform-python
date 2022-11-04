@@ -5519,10 +5519,12 @@ class MxPlatformApi(object):
                 'all': [
                     'member_guid',
                     'user_guid',
+                    'include_transactions',
                 ],
                 'required': [
                     'member_guid',
                     'user_guid',
+                    'include_transactions',
                 ],
                 'nullable': [
                 ],
@@ -5541,14 +5543,18 @@ class MxPlatformApi(object):
                         (str,),
                     'user_guid':
                         (str,),
+                    'include_transactions':
+                        (bool,),
                 },
                 'attribute_map': {
                     'member_guid': 'member_guid',
                     'user_guid': 'user_guid',
+                    'include_transactions': 'include_transactions',
                 },
                 'location_map': {
                     'member_guid': 'path',
                     'user_guid': 'path',
+                    'include_transactions': 'query',
                 },
                 'collection_format_map': {
                 }
